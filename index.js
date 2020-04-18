@@ -15,17 +15,12 @@ exports.authenticate = (username, ip, server) => {
       username = username.replace(regex, encodeValues[i]);
     }
 
-    var authServer;
-    var authPort;
-    var authPath;
-    var authUserAgent;
+    var authServer = 'auth.blockland.us';
+    var authPort = 80;
+    var authPath = '/authQuery.php';
+    var authUserAgent = 'Blockland-r2001';
 
-    if (typeof server === 'undefined') {
-      authServer = 'auth.blockland.us';
-      authPort = 80;
-      authPath = '/authQuery.php';
-      authUserAgent = 'Blockland-r2001';
-    } else {
+    if (typeof server !== 'undefined') {
       authServer = typeof server.address === 'undefined' ? 'auth.blockland.us' : server.address;
       authPort = typeof server.port === 'undefined' ? 80 : server.port;
       authPath = typeof server.path === 'undefined' ? '/authQuery.php' : server.path;
