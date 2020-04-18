@@ -36,6 +36,19 @@ Example:
 All keys are optional.
 If a key is skipped, the default value will be used.
 
+### Returns
+
+An array with the following:
+
+```javascript
+{
+  success: false, // True or false on authentication success or failure
+  username: 'Blockhead100000', // Username specified
+  ip: '123.123.123.123', // IP specified
+  blid: null // BL_ID returned on success, null if not
+}
+```
+
 ## Examples
 
 Check if the name **Blockhead100000** was last used by **123.123.123.123** on the official authentication server:
