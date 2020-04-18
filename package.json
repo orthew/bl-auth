@@ -1,0 +1,18 @@
+{
+  "name": "bl-auth",
+  "version": "1.0.0",
+  "description": "Authenticate legitimate users on Blockland.",
+  "main": "index.js",
+  "author": {
+    "name": "orthew",
+    "url": "https://github.com/orthew"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/orthew/bl-auth",
+  "keywords": [
+    "blockland"
+  ],
+  "dependencies": {
+    "iconv-lite": "^0.5.1"
+  }
+}
