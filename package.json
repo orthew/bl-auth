@@ -1,6 +1,6 @@
 {
   "name": "bl-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authenticate legitimate users on Blockland.",
   "main": "index.js",
   "author": {
