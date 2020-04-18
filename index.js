@@ -64,7 +64,7 @@ exports.authenticate = (username, ip, server) => {
 
         if (data[0] === 'YES') {
           authed.success = true;
-          authed.blid = data[1];
+          authed.blid = data[1].trim();
         }
 
         resolve(authed);
